@@ -34,7 +34,7 @@ ThemeManager::ThemeManager(QObject *parent)
     : QObject(parent)
     , m_darkMode(false)
     , m_accentColorIndex(-1)
-    , m_accentColor(m_blueColor) // The default is blue
+    , m_accentColor(m_natskyblueColor) // The default is blue
     , m_fontSize(9.0)
     , m_fontFamily("Noto Sans")
 {
@@ -132,29 +132,29 @@ void ThemeManager::setAccentColor(int accentColorID)
     m_accentColorIndex = accentColorID;
 
     switch (accentColorID) {
-    case ACCENTCOLOR_BLUE:
-        m_accentColor = m_blueColor;
+    case ACCENTCOLOR_NATSKYBLUE:
+        m_accentColor = m_natskyblueColor;
         break;
-    case ACCENTCOLOR_RED:
-        m_accentColor = m_redColor;
+    case ACCENTCOLOR_LIGHTBLUE:
+        m_accentColor = m_lightblueColor;
         break;
-    case ACCENTCOLOR_GREEN:
-        m_accentColor = m_greenColor;
+    case ACCENTCOLOR_SKYBLUE:
+        m_accentColor = m_skyblueColor;
         break;
-    case ACCENTCOLOR_PURPLE:
-        m_accentColor = m_purpleColor;
+    case ACCENTCOLOR_GRAPE:
+        m_accentColor = m_grapeColor;
         break;
-    case ACCENTCOLOR_PINK:
-        m_accentColor = m_pinkColor;
+    case ACCENTCOLOR_WINERED:
+        m_accentColor = m_wineredColor;
         break;
     case ACCENTCOLOR_ORANGE:
         m_accentColor = m_orangeColor;
         break;
-    case ACCENTCOLOR_GREY:
-        m_accentColor = m_greyColor;
+    case ACCENTCOLOR_YELLOW:
+        m_accentColor = m_yellowColor;
         break;
     default:
-        m_accentColor = m_blueColor;
+        m_accentColor = m_natskyblueColor;
         break;
     }
 

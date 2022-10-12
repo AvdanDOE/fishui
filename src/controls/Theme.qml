@@ -29,13 +29,13 @@ QtObject {
 
     property bool darkMode: FishUICore.ThemeManager.darkMode
 
-    property color blueColor: FishUICore.ThemeManager.blueColor
-    property color redColor: FishUICore.ThemeManager.redColor
-    property color greenColor: FishUICore.ThemeManager.greenColor
-    property color purpleColor: FishUICore.ThemeManager.purpleColor
-    property color pinkColor: FishUICore.ThemeManager.pinkColor
+    property color natskyblueColor: FishUICore.ThemeManager.natskyblueColor
+    property color lightblueColor: FishUICore.ThemeManager.lightblueColor
+    property color skyblueColor: FishUICore.ThemeManager.skyblueColor
+    property color grapeColor: FishUICore.ThemeManager.grapeColor
+    property color wineredColor: FishUICore.ThemeManager.wineredColor
     property color orangeColor: FishUICore.ThemeManager.orangeColor
-    property color greyColor: FishUICore.ThemeManager.greyColor
+    property color yellowColor: FishUICore.ThemeManager.yellowColor
 
     property color backgroundColor: darkMode ? "#1C1C1D" : "#F3F4F9"
     property color secondBackgroundColor: darkMode ? "#2C2C2D" : "#FFFFFF"

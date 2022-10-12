@@ -24,26 +24,26 @@
 #include <QFont>
 #include <QColor>
 
-#define ACCENTCOLOR_BLUE   0
-#define ACCENTCOLOR_RED    1
-#define ACCENTCOLOR_GREEN  2
-#define ACCENTCOLOR_PURPLE 3
-#define ACCENTCOLOR_PINK   4
+#define ACCENTCOLOR_NATSKYBLUE   0
+#define ACCENTCOLOR_LIGHTBLUE    1
+#define ACCENTCOLOR_SKYBLUE  2
+#define ACCENTCOLOR_GRAPE 3
+#define ACCENTCOLOR_WINERED   4
 #define ACCENTCOLOR_ORANGE 5
-#define ACCENTCOLOR_GREY   6
+#define ACCENTCOLOR_YELLOW   6
 
 class ThemeManager : public QObject
 {
     Q_OBJECT
     Q_PROPERTY(bool darkMode READ darkMode NOTIFY darkModeChanged)
     Q_PROPERTY(QColor accentColor READ accentColor NOTIFY accentColorChanged)
-    Q_PROPERTY(QColor blueColor READ blueColor CONSTANT)
-    Q_PROPERTY(QColor redColor READ redColor CONSTANT)
-    Q_PROPERTY(QColor greenColor READ greenColor CONSTANT)
-    Q_PROPERTY(QColor purpleColor READ purpleColor CONSTANT)
-    Q_PROPERTY(QColor pinkColor READ pinkColor CONSTANT)
+    Q_PROPERTY(QColor natskyblueColor READ natskyblueColor CONSTANT)
+    Q_PROPERTY(QColor lightblueColor READ lightblueColor CONSTANT)
+    Q_PROPERTY(QColor skyblueColor READ skyblueColor CONSTANT)
+    Q_PROPERTY(QColor grapeColor READ grapeColor CONSTANT)
+    Q_PROPERTY(QColor wineredColor READ wineredColor CONSTANT)
     Q_PROPERTY(QColor orangeColor READ orangeColor CONSTANT)
-    Q_PROPERTY(QColor greyColor READ greyColor CONSTANT)
+    Q_PROPERTY(QColor yellowColor READ yellowColor CONSTANT)
     Q_PROPERTY(qreal devicePixelRatio READ devicePixelRatio CONSTANT)
     Q_PROPERTY(qreal fontSize READ fontSize NOTIFY fontSizeChanged)
     Q_PROPERTY(QString fontFamily READ fontFamily NOTIFY fontFamilyChanged)
@@ -59,13 +59,13 @@ public:
     qreal fontSize() { return m_fontSize; }
     QString fontFamily() { return m_fontFamily; }
 
-    QColor blueColor() { return m_blueColor; }
-    QColor redColor() { return m_redColor; }
-    QColor greenColor() { return m_greenColor; }
-    QColor purpleColor() { return m_purpleColor; }
-    QColor pinkColor() { return m_pinkColor; }
+    QColor natskyblueColor() { return m_natskyblueColor; }
+    QColor lightblueColor() { return m_lightblueColor; }
+    QColor skyblueColor() { return m_skyblueColor; }
+    QColor grapeColor() { return m_grapeColor; }
+    QColor wineredColor() { return m_wineredColor; }
     QColor orangeColor() { return m_orangeColor; }
-    QColor greyColor() { return m_greyColor; }
+    QColor yellowColor() { return m_yellowColor; }
 
 signals:
     void darkModeChanged();
@@ -88,13 +88,13 @@ private:
     bool m_darkMode;
     int m_accentColorIndex;
 
-    QColor m_blueColor   = QColor(51,  133, 255);   // #3385FF
-    QColor m_redColor    = QColor(255, 92,  109);   // #FF5C6D
-    QColor m_greenColor  = QColor(53,  191, 86);    // #35BF56
-    QColor m_purpleColor = QColor(130, 102, 255);   // #8266FF
-    QColor m_pinkColor   = QColor(202, 100, 172);   // #CA64AC
-    QColor m_orangeColor = QColor(254, 160, 66);    // #FEA042
-    QColor m_greyColor   = QColor(79, 89, 107);     // #4F596B
+    QColor m_natskyblueColor   = QColor(86,  208, 102);   // #3385FF
+    QColor m_lightblueColor    = QColor(86,  208,  208);   // #FF5C6D
+    QColor m_skyblueColor  = QColor(60,  144, 191);    // #35BF56
+    QColor m_grapeColor = QColor(203, 111, 235);   // #8266FF
+    QColor m_wineredColor   = QColor(208, 86, 86);   // #CA64AC
+    QColor m_orangeColor = QColor(239, 149, 66);    // #FEA042
+    QColor m_yellowColor   = QColor(111, 240, 170);     // #4F596B
 
     QColor m_accentColor;
     qreal m_fontSize;
