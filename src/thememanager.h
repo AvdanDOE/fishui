@@ -88,13 +88,13 @@ private:
     bool m_darkMode;
     int m_accentColorIndex;
 
-    QColor m_natskyblueColor   = QColor(86,  208, 102);   // #3385FF
-    QColor m_lightblueColor    = QColor(86,  208,  208);   // #FF5C6D
-    QColor m_skyblueColor  = QColor(60,  144, 191);    // #35BF56
-    QColor m_grapeColor = QColor(203, 111, 235);   // #8266FF
-    QColor m_wineredColor   = QColor(208, 86, 86);   // #CA64AC
-    QColor m_orangeColor = QColor(239, 149, 66);    // #FEA042
-    QColor m_yellowColor   = QColor(111, 240, 170);     // #4F596B
+    QColor m_natskyblueColor   = QColor(86,  208, 102); // #56d066
+    QColor m_lightblueColor    = QColor(111, 240, 170); // #6ff0aa
+    QColor m_skyblueColor  = QColor(86,  208,  208);    // #56d0d0
+    QColor m_grapeColor = QColor(65,  85, 204);         // #4155cc
+    QColor m_wineredColor   = QColor(203, 111, 235);    // #cb6feb
+    QColor m_orangeColor = QColor(208, 86, 86);         // #d05656
+    QColor m_yellowColor   = QColor(239, 149, 66);      // #ef9542
 
     QColor m_accentColor;
     qreal m_fontSize;
